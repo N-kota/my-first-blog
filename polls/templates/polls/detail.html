@@ -1,0 +1,10 @@
+<h1>{{ question.question_text }}</h1>
+
+{{ form.non_field_errors }}
+
+<form action="{% url 'polls:detail' question.id %}" method="post">
+    {% csrf_token%}
+    {{ form.as_p }}
+    
+    <input type="submit" value="Vote">
+</form>
