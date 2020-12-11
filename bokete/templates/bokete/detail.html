@@ -4,10 +4,11 @@
 
 <form action="{% url 'bokete:detail' question.id %}" method="post">
     {% csrf_token%}
-    {{ form.as_p }}
+    {{form.as_p}}
     <input type="submit" value="Vote">
 </form>
 {% for image in images %}
 <img src='{{ MEDIA_URL }}{{image.picture}}' width=400>
     <h2>{{ image.title }}</h2>
 {% endfor %}
+

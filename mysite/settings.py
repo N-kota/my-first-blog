@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'polls.apps.PollsConfig',
     'album.apps.AlbumConfig',
-    'bokete.apps.BoketeConfig'
+    'bokete.apps.BoketeConfig',
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 MIDDLEWARE = [
